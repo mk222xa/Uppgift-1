@@ -1,0 +1,9 @@
+c:\users\mattias\documents\visual studio 2012\Projects\Tri\Tri\bin\Debug\Tri.exe.config
+c:\users\mattias\documents\visual studio 2012\Projects\Tri\Tri\bin\Debug\Tri.exe
+c:\users\mattias\documents\visual studio 2012\Projects\Tri\Tri\bin\Debug\Tri.pdb
+c:\users\mattias\documents\visual studio 2012\Projects\Tri\Tri\obj\Debug\Tri.csprojResolveAssemblyReference.cache
+c:\users\mattias\documents\visual studio 2012\Projects\Tri\Tri\obj\Debug\Tri.exe
+c:\users\mattias\documents\visual studio 2012\Projects\Tri\Tri\obj\Debug\Tri.pdb
+C:\Users\Mattias\Documents\GitHub\Uppgift-1\Triangel\kod\c#\Tri\bin\Debug\Tri.exe.config
+C:\Users\Mattias\Documents\GitHub\Uppgift-1\Triangel\kod\c#\Tri\obj\Debug\Tri.exe
+C:\Users\Mattias\Documents\GitHub\Uppgift-1\Triangel\kod\c#\Tri\obj\Debug\Tri.pdb
