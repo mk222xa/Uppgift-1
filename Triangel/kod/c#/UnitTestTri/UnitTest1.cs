@@ -42,59 +42,48 @@ namespace UnitTestTri
             Assert.IsFalse(new Triangle(3.0, 3.0, 4.0).isEquilateral());
         }
         //Check if the input is a valid triangle
-        [TestMethod]        
+        [TestMethod]
         public void CheckIfTriangle()
         {
             try
             {
                 new Triangle(0.0, 0.0, 0.0);
                 new Triangle(1.0, 2.0, 3.0);
-                new Triangle(2.0, 0.0, 5.0);                
+                new Triangle(2.0, 0.0, 5.0);
             }
-            catch(ArgumentOutOfRangeException)
+            catch (ArgumentOutOfRangeException)
             {
                 Assert.IsTrue(true);
             }
             Assert.Fail("Konstruktorerna kontrollerar inte om det är en triangel");
         }
         //Testing if negative values are caught
-        [TestMethod]        
+        [TestMethod]
         public void CheckForNegativeValues()
         {
-            Assert.IsFalse(new Triangle(-3.0, -3.0, -3.0).isEquilateral());
-            Assert.IsFalse(new Triangle(-3.0, 3.0, 3.0).isEquilateral());
-
-            Assert.IsFalse(new Triangle(-3.0, -4.0, -5.0).isScalene());
-            Assert.IsFalse(new Triangle(3.0, -4.0, 5.0).isScalene());
-
-            Assert.IsFalse(new Triangle(-2.0, -2.0, -3.0).isIsosceles());
-            Assert.IsFalse(new Triangle(2.0, -2.0, 3.0).isIsosceles());
+            try
+            {
+                new Triangle(-2, -5, -5);
+            }
+            catch (ArgumentOutOfRangeException)
+            {
+                Assert.Fail();
+            }
         }
         //Testing the Point constructor
         [TestMethod]
         public void PointConstructor()
         {
-            try
-            {
-                new Triangle(new Point(4, 4), new Point(7, 7), new Point(9, 9));
-            }
-            catch (ArgumentException)
-            {
-                Assert.Fail();
-            }
+            Triangle test = new Triangle(new Point(0, 0), new Point(4, 0), new Point(2, 2));
+            Assert.IsTrue(test.isIsosceles());
         }
         //Testing the point array constructor
         [TestMethod]
         public void PointArrayTest()
         {
-            try
-            {
-                new Triangle(new Point[] { new Point(4, 4), new Point(4, 4), new Point(4, 4) });
-            }
-            catch (ArgumentException)
-            {
-                Assert.Fail();
-            }
+            Triangle test = new Triangle(new Point[] { new Point(0, 0), new Point(4, 0), new Point(2, 2) });
+
+            Assert.IsTrue(test.isIsosceles());
         }
         //Testing the array constructor
         [TestMethod]
