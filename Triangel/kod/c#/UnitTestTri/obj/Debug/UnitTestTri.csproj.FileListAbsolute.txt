@@ -5,3 +5,10 @@ c:\Users\Mattias\documents\visual studio 2012\Projects\Tri\UnitTestTri\bin\Debug
 c:\Users\Mattias\documents\visual studio 2012\Projects\Tri\UnitTestTri\obj\Debug\UnitTestTri.csprojResolveAssemblyReference.cache
 c:\Users\Mattias\documents\visual studio 2012\Projects\Tri\UnitTestTri\obj\Debug\UnitTestTri.dll
 c:\Users\Mattias\documents\visual studio 2012\Projects\Tri\UnitTestTri\obj\Debug\UnitTestTri.pdb
+C:\Users\Mattias\Documents\GitHub\Uppgift-1\Triangel\kod\c#\UnitTestTri\bin\Debug\UnitTestTri.dll
+C:\Users\Mattias\Documents\GitHub\Uppgift-1\Triangel\kod\c#\UnitTestTri\bin\Debug\UnitTestTri.pdb
+C:\Users\Mattias\Documents\GitHub\Uppgift-1\Triangel\kod\c#\UnitTestTri\bin\Debug\Tri.exe
+C:\Users\Mattias\Documents\GitHub\Uppgift-1\Triangel\kod\c#\UnitTestTri\bin\Debug\Tri.pdb
+C:\Users\Mattias\Documents\GitHub\Uppgift-1\Triangel\kod\c#\UnitTestTri\obj\Debug\UnitTestTri.csprojResolveAssemblyReference.cache
+C:\Users\Mattias\Documents\GitHub\Uppgift-1\Triangel\kod\c#\UnitTestTri\obj\Debug\UnitTestTri.dll
+C:\Users\Mattias\Documents\GitHub\Uppgift-1\Triangel\kod\c#\UnitTestTri\obj\Debug\UnitTestTri.pdb

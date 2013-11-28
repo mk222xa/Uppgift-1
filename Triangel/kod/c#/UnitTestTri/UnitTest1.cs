@@ -4,7 +4,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace UnitTestTri
 {
     [TestClass]
-    public class TriangelUnitTest
+    public class TriangleUnitTest
     {
         //Testing Isosceles with different values
         [TestMethod]
@@ -20,26 +20,26 @@ namespace UnitTestTri
         }
         //testing Equilateral with different values
         [TestMethod]
-        public void IsEquilateralTest()
+        public void IsScaleneTest()
         {
-            Assert.IsTrue(new Triangle(2.0, 3.0, 4.0).isEquilateral());
-            Assert.IsTrue(new Triangle(2, 3, 4).isEquilateral());
-            Assert.IsTrue(new Triangle(2.3, 3.3, 4.3).isEquilateral());
+            Assert.IsTrue(new Triangle(2.0, 3.0, 4.0).isScalene());
+            Assert.IsTrue(new Triangle(2, 3, 4).isScalene());
+            Assert.IsTrue(new Triangle(2.3, 3.3, 4.3).isScalene());
 
-            Assert.IsFalse(new Triangle(2.0, 3.0, 2.0).isEquilateral());
-            Assert.IsFalse(new Triangle(999.0, 999.0, 999.0).isEquilateral());
-            Assert.IsFalse(new Triangle(0, 0, 0).isEquilateral());
+            Assert.IsFalse(new Triangle(2.0, 3.0, 2.0).isScalene());
+            Assert.IsFalse(new Triangle(999.0, 999.0, 999.0).isScalene());
+            Assert.IsFalse(new Triangle(0, 0, 0).isScalene());
         }
         //Testing Scalene with different values
         [TestMethod]
-        public void IsScaleneTest()
+        public void IsEquilateralTest()
         {
-            Assert.IsTrue(new Triangle(3.0, 3.0, 3.0).isScalene());
-            Assert.IsTrue(new Triangle(3, 3, 3).isScalene());
+            Assert.IsTrue(new Triangle(3.0, 3.0, 3.0).isEquilateral());
+            Assert.IsTrue(new Triangle(3, 3, 3).isEquilateral());
 
-            Assert.IsFalse(new Triangle(3.1, 3.4, 3.7).isScalene());
-            Assert.IsFalse(new Triangle(3.0, 4.0, 5.0).isScalene());
-            Assert.IsFalse(new Triangle(3.0, 3.0, 4.0).isScalene());
+            Assert.IsFalse(new Triangle(3.1, 3.4, 3.7).isEquilateral());
+            Assert.IsFalse(new Triangle(3.0, 4.0, 5.0).isEquilateral());
+            Assert.IsFalse(new Triangle(3.0, 3.0, 4.0).isEquilateral());
         }
         [TestMethod]
         public void CheckIfTriangle()
@@ -59,11 +59,11 @@ namespace UnitTestTri
         [TestMethod]
         public void CheckForNegativeValues()
         {
-            Assert.IsFalse(new Triangle(-3.0, -3.0, -3.0).isScalene());
-            Assert.IsFalse(new Triangle(-3.0, 3.0, 3.0).isScalene());
+            Assert.IsFalse(new Triangle(-3.0, -3.0, -3.0).isEquilateral());
+            Assert.IsFalse(new Triangle(-3.0, 3.0, 3.0).isEquilateral());
 
-            Assert.IsFalse(new Triangle(-3.0, -4.0, -5.0).isEquilateral());
-            Assert.IsFalse(new Triangle(3.0, -4.0, 5.0).isEquilateral());
+            Assert.IsFalse(new Triangle(-3.0, -4.0, -5.0).isScalene());
+            Assert.IsFalse(new Triangle(3.0, -4.0, 5.0).isScalene());
 
             Assert.IsFalse(new Triangle(-2.0, -2.0, -3.0).isIsosceles());
             Assert.IsFalse(new Triangle(2.0, -2.0, 3.0).isIsosceles());
