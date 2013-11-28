@@ -41,7 +41,8 @@ namespace UnitTestTri
             Assert.IsFalse(new Triangle(3.0, 4.0, 5.0).isEquilateral());
             Assert.IsFalse(new Triangle(3.0, 3.0, 4.0).isEquilateral());
         }
-        [TestMethod]
+        //Check if the input is a valid triangle
+        [TestMethod]        
         public void CheckIfTriangle()
         {
             try
@@ -56,7 +57,8 @@ namespace UnitTestTri
             }
             Assert.Fail("Konstruktorerna kontrollerar inte om det är en triangel");
         }
-        [TestMethod]
+        //Testing if negative values are caught
+        [TestMethod]        
         public void CheckForNegativeValues()
         {
             Assert.IsFalse(new Triangle(-3.0, -3.0, -3.0).isEquilateral());
@@ -67,6 +69,47 @@ namespace UnitTestTri
 
             Assert.IsFalse(new Triangle(-2.0, -2.0, -3.0).isIsosceles());
             Assert.IsFalse(new Triangle(2.0, -2.0, 3.0).isIsosceles());
+        }
+        //Testing the Point constructor
+        [TestMethod]
+        public void PointConstructor()
+        {
+            try
+            {
+                new Triangle(new Point(4, 4), new Point(7, 7), new Point(9, 9));
+            }
+            catch (ArgumentException)
+            {
+                Assert.Fail();
+            }
+        }
+        //Testing the point array constructor
+        [TestMethod]
+        public void PointArrayTest()
+        {
+            try
+            {
+                new Triangle(new Point[] { new Point(4, 4), new Point(4, 4), new Point(4, 4) });
+            }
+            catch (ArgumentException)
+            {
+                Assert.Fail();
+            }
+        }
+        //Testing the array constructor
+        [TestMethod]
+        public void ArrayConstructorTest()
+        {
+            try
+            {
+                double[] sides;
+                sides = new double[] { 4, 5, 6 };
+                new Triangle(sides);
+            }
+            catch (ArgumentException)
+            {
+                Assert.Fail();
+            }
         }
 
     }
